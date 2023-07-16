@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reham Galal</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- style file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;
+    400;500;600;700;800;900;1000&family=Merriweather:ital,wght@0
+    100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body><!-- start header -->
+    <header>
+        <div class="header">
+            <div class="logo">Reham</div>
+            <div class="links">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header><!-- end header --><!-- start home -->
+    <div class="home" id="About">
+        <div class="container">
+            <div class="info">
+                <p class="fade-in">Hello,I'Am <span>Reham</span></p>
+                <h1 class="gradual-text">Front-end-developer</h1>
+                <p>Making Creative Websites & Applications Using Languages:<br>HTML, CSS, And JavaScript.</p>
+                <button><a href="#">View MY Work</a></button>
+            </div>
+        </div>
+    </div><!-- end home --><!-- start projects -->
+    <div class="projects" id="projects">
+        <h1 class="heading">PROJECTS</h1>
+        <div class="container">
+            <div class="project">
+                <div class="image"><img src="images/project1.jpg"></div>
+                <button><a class="button">view this project</a></button>
+                <div class="info">
+                    <h4>Templet1</h4><a href="#">more details</a><i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image"><img src="images/project2.jpg"></div>
+                <button><a>view this project</a></button>
+                <div class="info">
+                    <h4>Templet2</h4><a href="#">more details</a><i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image"><img src="images/project3.jpg"></div><button><a>view this project</a></button>
+                <div class="info">
+                    <h4>Templet3</h4><a href="#">more details</a><i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end projects --><!--start services -->
+    <div class="skills" id="Skills">
+        <h1 class="heading">MY-Skills</h1>
+        <div class="container">
+            <div class="box"><i class="fa-brands fa-html5 html"></i><span>1/ST</span>
+                <p>HTML</p>
+            </div>
+            <div class="box"><i class="fa-brands fa-css3-alt css"></i><span>2/ND</span>
+                <p>CSS</p>
+            </div>
+            <div class="box"><i class="fa-brands fa-js js"></i><span>3/RD</span>
+                <p>Java Script</p>
+            </div>
+        </div>
+    </div> <!-- end services --><!-- start Subscribe -->
+    <div class="SubscribeContainer">
+        <div class="Subscribe">
+            <div class="info">
+                <h3>Subscribe to Newsletter</h3>
+                <p>Stay up to date with our latest new, updates and special offers</p>
+            </div>
+            <div class="buttons"><input type="text" placeholder="Enter your address"><button>Send Now</button>
+            </div>
+        </div>
+    </div><!-- Subscribe --><!-- START  Footer -->
+    <footer>
+        <div class="content">
+            <div class="info">
+                <h4>front-end</h4>
+                <P>HTML (HyperText Markup Language): The standard markup language used to create the structure and
+                    layout of web pages.CSS (Cascading Style Sheets): A stylesheet language used to
+                    control the presentation, formatting, and appearance of web pages.</P>
+            </div>
+            <div class="social">
+                <div class="foot">&copy; 2023 <span>Reham Galal</span> All Right Reserved</div>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="info">
+                <h4>front-end</h4>
+                <P>A front-end developer builds the front-end portion of websites and web applications—the part users
+                    see and interact with. A front-end developer creates websites and applications using web languages
+                    such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app.</P>
+            </div>
+        </div>
+        <!-- animation  with js-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textElement = document.querySelector(".gradual-text");
+                const text = textElement.textContent;
+                const characters = text.split("");
+                const newText = characters
+                    .map(
+                        (char, index) =>
+                            `<span style="animation-delay:${index * 0.1}s">${char}</span>`
+                    )
+                    .join("");
+                textElement.innerHTML = newText;
+            });
+        </script>
+        <!-- end animation  -->
+    </footer><!-- end footer -->
+</body>
+
+</html>
